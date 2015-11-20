@@ -3,18 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>css1 | deanly007</title>
+  <title>属性动画 | deanly007</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="动画属性规则">
+  <meta name="description" content="动画属性转换(transform)##变换的效果，让某个元素改变形状，大小和位置。2D 转换
+
+translate()
+rotate()
+scale()
+skew()
+matrix()浏览器支持123Internet Explorer 10, Firefox, 和 Opera支持transform 属性.Chrome 和 Safari 要求前缀 -webkit- 版本.注意： Internet E">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css1">
+<meta property="og:title" content="属性动画">
 <meta property="og:url" content="http://www.deanly007.com/2015/11/20/css1/index.html">
 <meta property="og:site_name" content="deanly007">
-<meta property="og:description" content="动画属性规则">
-<meta property="og:updated_time" content="2015-11-20T04:25:33.031Z">
+<meta property="og:description" content="动画属性转换(transform)##变换的效果，让某个元素改变形状，大小和位置。2D 转换
+
+translate()
+rotate()
+scale()
+skew()
+matrix()浏览器支持123Internet Explorer 10, Firefox, 和 Opera支持transform 属性.Chrome 和 Safari 要求前缀 -webkit- 版本.注意： Internet E">
+<meta property="og:updated_time" content="2015-11-20T06:07:07.881Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css1">
-<meta name="twitter:description" content="动画属性规则">
+<meta name="twitter:title" content="属性动画">
+<meta name="twitter:description" content="动画属性转换(transform)##变换的效果，让某个元素改变形状，大小和位置。2D 转换
+
+translate()
+rotate()
+scale()
+skew()
+matrix()浏览器支持123Internet Explorer 10, Firefox, 和 Opera支持transform 属性.Chrome 和 Safari 要求前缀 -webkit- 版本.注意： Internet E">
   
   
     <link rel="icon" href="/favicon.png">
@@ -82,7 +100,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      css1
+      属性动画
     </h1>
   
 
@@ -90,12 +108,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="动画属性">动画属性</h1><p>规则</p>
+        <h1 id="动画属性">动画属性</h1><h2 id="转换(transform)">转换(transform)</h2><p>##变换的效果，让某个元素改变形状，大小和位置。<br>2D 转换</p>
+<ul>
+<li>translate()</li>
+<li>rotate()</li>
+<li>scale()</li>
+<li>skew()</li>
+<li>matrix()<h3 id="浏览器支持">浏览器支持</h3><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">Internet</span> <span class="variable">Explorer</span> <span class="number">10</span>, <span class="variable">Firefox</span>, 和 <span class="variable">Opera</span>支持transform 属性.</span><br><span class="line"><span class="variable">Chrome</span> 和 <span class="variable">Safari</span> 要求前缀 -webkit- 版本.</span><br><span class="line">注意： <span class="variable">Internet</span> <span class="variable">Explorer</span> <span class="number">9</span> 要求前缀 -ms- 版本.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>单位 : px deg  none<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">translate</span><span class="params">(x,y)</span></span>  定义 <span class="number">2</span>D 转换，沿着 X 和 Y 轴移动元素。 px</span><br><span class="line"><span class="function"><span class="title">translateX</span><span class="params">(n)</span></span>   定义 <span class="number">2</span>D 转换，沿着 X 轴移动元素。px</span><br><span class="line"><span class="function"><span class="title">translateY</span><span class="params">(n)</span></span>   定义 <span class="number">2</span>D 转换，沿着 Y 轴移动元素。px </span><br><span class="line"><span class="function"><span class="title">scale</span><span class="params">(x,y)</span></span>  定义 <span class="number">2</span>D 缩放转换，改变元素的宽度和高度。<span class="attribute">none</span></span><br><span class="line"><span class="function"><span class="title">scaleX</span><span class="params">(n)</span></span>   定义 <span class="number">2</span>D 缩放转换，改变元素的宽度。<span class="attribute">none</span></span><br><span class="line"><span class="function"><span class="title">scaleY</span><span class="params">(n)</span></span>   定义 <span class="number">2</span>D 缩放转换，改变元素的高度。<span class="attribute">none</span></span><br><span class="line"><span class="function"><span class="title">rotate</span><span class="params">(angle)</span></span>   定义 <span class="number">2</span>D 旋转，在参数中规定角度。deg</span><br><span class="line"><span class="function"><span class="title">skew</span><span class="params">(x-angle,y-angle)</span></span>   定义 <span class="number">2</span>D 倾斜转换，沿着 X 和 Y 轴。deg</span><br><span class="line"><span class="function"><span class="title">skewX</span><span class="params">(angle)</span></span>    定义 <span class="number">2</span>D 倾斜转换，沿着 X 轴。deg</span><br><span class="line"><span class="function"><span class="title">skewY</span><span class="params">(angle)</span></span>    定义 <span class="number">2</span>D 倾斜转换，沿着 Y 轴。deg</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>#transition</p>
+<p>##浏览器支持<br>internet Explorer 10, Firefox, Opera, Chrome, 和Opera 支持transition 属性.<br>Safari 需要前缀 -webkit-。<br>注意： Internet Explorer 9 以及更早的版本，不支持 transition 属性。<br>注意：Chrome 25 以及更早的版本，需要前缀 -webkit-。</p>
+<p>##原理<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">CSS3</span> 过渡是元素从一种样式逐渐改变为另一种的效果。</span><br><span class="line">要实现这一点，必须规定两项内容：</span><br><span class="line">指定要添加效果的CSS属性</span><br><span class="line">指定效果的持续时间。</span><br></pre></td></tr></table></figure></p>
+<h3 id="多项改变_逗号分隔">多项改变 逗号分隔</h3><p>要添加多个样式的变换效果，添加的属性由逗号分隔：</p>
+<p>实例<br>添加了宽度，高度和转换效果：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span></span><br><span class="line"><span class="rules">&#123;</span><br><span class="line"><span class="rule"><span class="attribute">transition</span>:<span class="value"> width <span class="number">2s</span>, height <span class="number">2s</span>, transform <span class="number">2s</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> width <span class="number">2s</span>, height <span class="number">2s</span>, -webkit-transform <span class="number">2s</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>过渡属性<br>下表列出了所有的过渡属性:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">transition  简写属性，用于在一个属性中设置四个过渡属性。  <span class="number">3</span></span><br><span class="line">transition-property 规定应用过渡的 CSS 属性的名称。  <span class="number">3</span></span><br><span class="line">transition-duration 定义过渡效果花费的时间。默认是 <span class="number">0</span>。  <span class="number">3</span></span><br><span class="line">transition-timing-function  规定过渡效果的时间曲线。默认是 <span class="string">"ease"</span>。 <span class="number">3</span></span><br><span class="line">transition-delay    规定过渡效果何时开始。默认是 <span class="number">0</span>。   <span class="number">3</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.deanly007.com/2015/11/20/css1/" data-id="cih75znj70000ngmk7xjs59er" class="article-share-link">Share</a>
+      <a data-url="http://www.deanly007.com/2015/11/20/css1/" data-id="cih7hc2ob0000u4mkxykfh356" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
@@ -104,6 +138,20 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2015/11/20/pachong/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          node写爬虫
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -115,7 +163,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/cssanimate/">css动画</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/cssanimate/">css动画</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/thinkphp/">thinkphp</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -124,7 +172,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -133,7 +181,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">云标签</h3>
     <div class="widget tagcloud">
-      <a href="/tags/css/" style="font-size: 10px;">css</a>
+      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/jquery/" style="font-size: 20px;">jquery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/php/" style="font-size: 15px;">php</a>
     </div>
   </div>
 
@@ -142,7 +190,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">9</span></li></ul>
     </div>
   </div>
 
@@ -154,7 +202,23 @@
       <ul>
         
           <li>
-            <a href="/2015/11/20/css1/">css1</a>
+            <a href="/2015/11/20/juqery2/">基础知识</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/20/jquery3/">对象互换和版本冲突</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/20/jquery4/">DOM获取（1）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/20/jquery1/">jquery入门（了解）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/20/thinkphp2/">视图模型</a>
           </li>
         
       </ul>

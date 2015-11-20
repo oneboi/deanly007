@@ -3,49 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | deanly007</title>
+  <title>视图模型 | deanly007</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="知识结构前端
-html 
-javacript
-jquery
-easeyui
-
-后台
-php
-thinkphp
-node.js
-java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://www.deanly007.com/about/index.html">
+  <meta name="description" content="#关联模型的本质它通过生成多条SQL语句然后进行数组拼装得到最终想要的结果。*关联模型可以解决一对一、一对多和多对多等关联操作。12生成多条SQL语句，执行了很多遍 性能低但功能强大
+对于一对一这种HAS_ONE 和BELONGS_TO的多表关联查询，可以使用视图模型。它采用的是联合查询（JOIN），非常适合此类查询需求12只生成一条SQL语句 对于简单不复杂的逻辑可以用这种方式
+关联的实质就是多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="视图模型">
+<meta property="og:url" content="http://www.deanly007.com/2015/11/20/thinkphp2/index.html">
 <meta property="og:site_name" content="deanly007">
-<meta property="og:description" content="知识结构前端
-html 
-javacript
-jquery
-easeyui
-
-后台
-php
-thinkphp
-node.js
-java">
-<meta property="og:image" content="http://www.deanly007.com/../images/8.jpg">
-<meta property="og:updated_time" content="2015-11-20T04:07:22.405Z">
+<meta property="og:description" content="#关联模型的本质它通过生成多条SQL语句然后进行数组拼装得到最终想要的结果。*关联模型可以解决一对一、一对多和多对多等关联操作。12生成多条SQL语句，执行了很多遍 性能低但功能强大
+对于一对一这种HAS_ONE 和BELONGS_TO的多表关联查询，可以使用视图模型。它采用的是联合查询（JOIN），非常适合此类查询需求12只生成一条SQL语句 对于简单不复杂的逻辑可以用这种方式
+关联的实质就是多">
+<meta property="og:updated_time" content="2015-11-20T08:51:39.573Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="知识结构前端
-html 
-javacript
-jquery
-easeyui
-
-后台
-php
-thinkphp
-node.js
-java">
+<meta name="twitter:title" content="视图模型">
+<meta name="twitter:description" content="#关联模型的本质它通过生成多条SQL语句然后进行数组拼装得到最终想要的结果。*关联模型可以解决一对一、一对多和多对多等关联操作。12生成多条SQL语句，执行了很多遍 性能低但功能强大
+对于一对一这种HAS_ONE 和BELONGS_TO的多表关联查询，可以使用视图模型。它采用的是联合查询（JOIN），非常适合此类查询需求12只生成一条SQL语句 对于简单不复杂的逻辑可以用这种方式
+关联的实质就是多">
   
   
     <link rel="icon" href="/favicon.png">
@@ -95,12 +70,16 @@ java">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-thinkphp2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/about/index.html" class="article-date">
-  <time datetime="2015-11-20T04:07:22.405Z" itemprop="datePublished">2015-11-20</time>
+    <a href="/2015/11/20/thinkphp2/" class="article-date">
+  <time datetime="2015-11-20T08:51:39.573Z" itemprop="datePublished">2015-11-20</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/thinkphp/">thinkphp</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -109,7 +88,7 @@ java">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      视图模型
     </h1>
   
 
@@ -117,30 +96,46 @@ java">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="知识结构">知识结构</h1><h2 id="前端">前端</h2><ul>
-<li>html </li>
-<li>javacript</li>
-<li>jquery</li>
-<li>easeyui</li>
-</ul>
-<h2 id="后台">后台</h2><ul>
-<li>php</li>
-<li>thinkphp</li>
-<li>node.js</li>
-<li>java</li>
-</ul>
-<p><img src="../images/8.jpg" alt=""></p>
+        <p>#关联模型的本质<br><strong>它通过生成多条SQL语句然后进行数组拼装得到最终想要的结果。*</strong><br>关联模型可以解决一对一、一对多和多对多等关联操作。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">生成多条SQL语句，执行了很多遍</span><br><span class="line"> 性能低但功能强大</span><br></pre></td></tr></table></figure></p>
+<p>对于一对一这种HAS_ONE 和BELONGS_TO的多表关联查询，可以使用视图模型。它采用的是联合查询（JOIN），非常适合此类查询需求<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">只生成一条SQL语句 </span><br><span class="line">对于简单不复杂的逻辑可以用这种方式</span><br></pre></td></tr></table></figure></p>
+<p>关联的实质就是多表操作（查询 删除  修改 增加）</p>
+<h1 id="视图定义">视图定义</h1><blockquote>
+<p>视图通常是指数据库的视图，视图是一个虚拟表，其内容由查询定义。<br>同真实的表一样，视图包含一系列带有名称的列和行数据。<br>但是，视图并不在数据库中以存储的数据值集形式存在。<br>行和列数据来自（由定义视图的查询所引用的表），并且在引用视图时动态生成。<br>对其中所引用的基础表来说，视图的作用类似于筛选。<br>定义视图的筛选可以来自当前或其它数据库的一个或多个表，或者其它视图。<br>分布式查询也可用于定义使用多个异类源数据的视图。如果有几台不同的服务器分别存储组织中不同地区的数据，而您需要将这些服务器上相似结构的数据组合起来，这种方式就很有用。<br>视图在有些数据库下面并不被支持，但是ThinkPHP模拟实现了数据库的视图，该功能可以用于多表联合查询。非常适合解决HAS_ONE 和 BELONGS_TO 类型的关联查询。</p>
+</blockquote>
+<p>主表从表： 我们要显示主表 条件写在从表里面</p>
+<p>用户表<br>身份证表<br>一个用户对应一个身份证现在要要查询用户信息包括身份证</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.deanly007.com/about/index.html" data-id="cih7hc2os0006u4mkjfyc0puo" class="article-share-link">Share</a>
+      <a data-url="http://www.deanly007.com/2015/11/20/thinkphp2/" data-id="cih7hc2ox000cu4mkz6036140" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2015/11/20/jquery1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          jquery入门（了解）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/11/20/thinkphp/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">调试方法</div>
+    </a>
+  
+</nav>
+
   
 </article>
 

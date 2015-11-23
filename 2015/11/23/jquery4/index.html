@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>DOM获取（1） | deanly007</title>
+  <title>(4)DOM获取（1）基本选择器 | deanly007</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="#基本介绍jQuery 最核心的组成部分就是：选择器引擎。它继承了CSS 的语法，可以对DOM 元素的标签名、属性名、状态等进行快速准确的选择，并且不必担心浏览器的兼容性。jQuery选择器实现了CSS1~CSS3的大部分规则之外，还实现了一些自定义的选择器，用于各种特殊状态的选择。
 选择器
@@ -14,8 +14,8 @@
 选择什么ID  class 标签 属性 状态
 ###基本形式 ：$(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DOM获取（1）">
-<meta property="og:url" content="http://www.deanly007.com/2015/11/20/jquery4/index.html">
+<meta property="og:title" content="(4)DOM获取（1）基本选择器">
+<meta property="og:url" content="http://www.deanly007.com/2015/11/23/jquery4/index.html">
 <meta property="og:site_name" content="deanly007">
 <meta property="og:description" content="#基本介绍jQuery 最核心的组成部分就是：选择器引擎。它继承了CSS 的语法，可以对DOM 元素的标签名、属性名、状态等进行快速准确的选择，并且不必担心浏览器的兼容性。jQuery选择器实现了CSS1~CSS3的大部分规则之外，还实现了一些自定义的选择器，用于各种特殊状态的选择。
 选择器
@@ -25,9 +25,9 @@
 
 选择什么ID  class 标签 属性 状态
 ###基本形式 ：$(">
-<meta property="og:updated_time" content="2015-11-20T09:34:42.173Z">
+<meta property="og:updated_time" content="2015-11-23T00:46:51.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DOM获取（1）">
+<meta name="twitter:title" content="(4)DOM获取（1）基本选择器">
 <meta name="twitter:description" content="#基本介绍jQuery 最核心的组成部分就是：选择器引擎。它继承了CSS 的语法，可以对DOM 元素的标签名、属性名、状态等进行快速准确的选择，并且不必担心浏览器的兼容性。jQuery选择器实现了CSS1~CSS3的大部分规则之外，还实现了一些自定义的选择器，用于各种特殊状态的选择。
 选择器
 简单选择器
@@ -87,8 +87,8 @@
       <div class="outer">
         <section id="main"><article id="post-jquery4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/11/20/jquery4/" class="article-date">
-  <time datetime="2015-11-20T09:34:42.173Z" itemprop="datePublished">2015-11-20</time>
+    <a href="/2015/11/23/jquery4/" class="article-date">
+  <time datetime="2015-11-23T00:46:51.029Z" itemprop="datePublished">2015-11-23</time>
 </a>
     
   <div class="article-category">
@@ -103,7 +103,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      DOM获取（1）
+      (4)DOM获取（1）基本选择器
     </h1>
   
 
@@ -123,8 +123,8 @@
 <p>#基本选择器</p>
 <p>##元素 ID class<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span><span class="string">'div'</span>).css(<span class="string">'color'</span>, <span class="string">'red'</span>); <span class="regexp">//</span>元素选择器，返回多个元素</span><br><span class="line"><span class="variable">$(</span><span class="string">'#box'</span>).css(<span class="string">'color'</span>, <span class="string">'red'</span>); <span class="regexp">//</span><span class="constant">ID</span> 选择器，返回单个元素</span><br><span class="line"><span class="variable">$(</span><span class="string">'.box'</span>).css(<span class="string">'color'</span>, <span class="string">'red'</span>); <span class="regexp">//</span>类(<span class="class"><span class="keyword">class</span>)选择器，返回多个元素</span></span><br></pre></td></tr></table></figure></p>
 <p>#获取返回的jquery对象个数</p>
-<h1 id="方法：object-size())">方法：object.size())</h1><figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="variable">$(</span><span class="string">'div'</span>).<span class="keyword">size</span>()); <span class="comment">//3 个</span></span><br><span class="line">alert(<span class="variable">$(</span><span class="string">'#box'</span>).<span class="keyword">size</span>()); <span class="comment">//1 个，后面两个失明了</span></span><br><span class="line">alert(<span class="variable">$(</span><span class="string">'.box'</span>).<span class="keyword">size</span>()); <span class="comment">//3 个</span></span><br></pre></td></tr></table></figure>
-<h1 id="属性：_object-length">属性： object.length</h1><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert<span class="list">($<span class="list">(<span class="quoted">'#box</span>')</span>.length)</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<h2 id="方法：object-size())">方法：object.size())</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="variable">$(</span><span class="string">'div'</span>).<span class="keyword">size</span>()); <span class="comment">//3 个</span></span><br><span class="line">alert(<span class="variable">$(</span><span class="string">'#box'</span>).<span class="keyword">size</span>()); <span class="comment">//1 个，后面两个失明了</span></span><br><span class="line">alert(<span class="variable">$(</span><span class="string">'.box'</span>).<span class="keyword">size</span>()); <span class="comment">//3 个</span></span><br></pre></td></tr></table></figure>
+<h2 id="属性：_object-length">属性： object.length</h2><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert<span class="list">($<span class="list">(<span class="quoted">'#box</span>')</span>.length)</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <h1 id="css和jQuery对样式操作的不同">css和jQuery对样式操作的不同</h1><p>jQuery 选择器的写法与CSS 选择器十分类似，只不过他们的功能不同。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">CSS</span> 找到元素后添加的是单一的样式，而jQuery 则添加的是动作行为。</span><br></pre></td></tr></table></figure></p>
 <p>最重要的一点是：CSS 在添加样式的时候，高级选择器会对部分浏览器不兼容，而jQuery 选择器在添加CSS 样式的时候却不必为此烦恼。<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#<span class="built_in">box</span> &gt; p &#123; <span class="comment">//CSS 子选择器，IE6 不支持</span></span><br><span class="line"><span class="built_in">color</span>:<span class="built_in">red</span>;</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="string">'#box &gt; p'</span>).css(<span class="string">'color'</span>,<span class="string">'red'</span>); <span class="comment">//jQuery 子选择器，兼容了IE6</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="jquery和js的不同">jquery和js的不同</h1><p>##juqery的容错功能<br>jquery内置了容错功能，这样避免像JavaScript那样每次对节点的获取需要进行有效判段。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#pox'</span>).css(<span class="string">'color'</span>, <span class="string">'red'</span>); <span class="comment">//不存在ID 为pox 的元素，也不报错</span></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'pox'</span>).style.color = <span class="string">'red'</span>; <span class="comment">//报错了</span></span><br></pre></td></tr></table></figure></p>
@@ -135,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.deanly007.com/2015/11/20/jquery4/" data-id="cih7hc2pd000su4mk43huqvdn" class="article-share-link">Share</a>
+      <a data-url="http://www.deanly007.com/2015/11/23/jquery4/" data-id="cihbf13hq0017sgmk4dte3b56" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
@@ -146,19 +146,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/11/20/jquery3/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/11/23/jquery5/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          对象互换和版本冲突
+          （5）DOM获取（2）进阶选择器
         
       </div>
     </a>
   
   
-    <a href="/2015/11/20/jquery1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/11/23/juqery2/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">jquery入门（了解）</div>
+      <div class="article-nav-title">(2)基础知识</div>
     </a>
   
 </nav>
@@ -174,7 +174,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/cssanimate/">css动画</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/thinkphp/">thinkphp</a><span class="category-list-count">3</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/cssanimate/">css动画</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/thinkphp/">thinkphp</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -183,7 +183,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -201,7 +201,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">9</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">17</span></li></ul>
     </div>
   </div>
 
@@ -213,23 +213,23 @@
       <ul>
         
           <li>
-            <a href="/2015/11/20/juqery2/">基础知识</a>
+            <a href="/2015/11/23/jquery12/">（12）节点操作</a>
           </li>
         
           <li>
-            <a href="/2015/11/20/jquery3/">对象互换和版本冲突</a>
+            <a href="/2015/11/23/jquery11/">CSS方法</a>
           </li>
         
           <li>
-            <a href="/2015/11/20/jquery4/">DOM获取（1）</a>
+            <a href="/2015/11/23/jquery10/">CSS 操作</a>
           </li>
         
           <li>
-            <a href="/2015/11/20/jquery1/">jquery入门（了解）</a>
+            <a href="/2015/11/23/jquery9/">基础DOM 和CSS 操作</a>
           </li>
         
           <li>
-            <a href="/2015/11/20/thinkphp2/">视图模型</a>
+            <a href="/2015/11/23/jquery8/">（8）DOM获取（5）伪类选择器</a>
           </li>
         
       </ul>

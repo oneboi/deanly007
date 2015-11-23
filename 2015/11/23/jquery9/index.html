@@ -3,30 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>node写爬虫 | deanly007</title>
+  <title>基础DOM 和CSS 操作 | deanly007</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="准备安装环境express脚手架4.X1npm install -g express
-注意：最新express4.0版本中将命令工具分家出来了所以我们还需要安装一个命令工具,命令如下:1npm install -g express-generator
-查看版本: express -V
-###注意 :express -V中的V要大写,不然很多版本中会不识别
-创建工程1express hellowor">
+  <meta name="description" content="#元素内容的获取和修改
+
+html()  获取元素中HTML 内容html(value) 设置元素中HTML 内容
+text() 获取元素中文本内容text(value) 设置原生中文本内容
+val() 获取表单中的文本内容val(value) 设置表单中的文本内容
+
+html 和 text的区别$(‘#box’).html(); //获取html 内容$(‘#box’).text(); //获取">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node写爬虫">
-<meta property="og:url" content="http://www.deanly007.com/2015/11/20/pachong/index.html">
+<meta property="og:title" content="基础DOM 和CSS 操作">
+<meta property="og:url" content="http://www.deanly007.com/2015/11/23/jquery9/index.html">
 <meta property="og:site_name" content="deanly007">
-<meta property="og:description" content="准备安装环境express脚手架4.X1npm install -g express
-注意：最新express4.0版本中将命令工具分家出来了所以我们还需要安装一个命令工具,命令如下:1npm install -g express-generator
-查看版本: express -V
-###注意 :express -V中的V要大写,不然很多版本中会不识别
-创建工程1express hellowor">
-<meta property="og:updated_time" content="2015-11-20T09:39:34.203Z">
+<meta property="og:description" content="#元素内容的获取和修改
+
+html()  获取元素中HTML 内容html(value) 设置元素中HTML 内容
+text() 获取元素中文本内容text(value) 设置原生中文本内容
+val() 获取表单中的文本内容val(value) 设置表单中的文本内容
+
+html 和 text的区别$(‘#box’).html(); //获取html 内容$(‘#box’).text(); //获取">
+<meta property="og:updated_time" content="2015-11-23T02:00:14.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node写爬虫">
-<meta name="twitter:description" content="准备安装环境express脚手架4.X1npm install -g express
-注意：最新express4.0版本中将命令工具分家出来了所以我们还需要安装一个命令工具,命令如下:1npm install -g express-generator
-查看版本: express -V
-###注意 :express -V中的V要大写,不然很多版本中会不识别
-创建工程1express hellowor">
+<meta name="twitter:title" content="基础DOM 和CSS 操作">
+<meta name="twitter:description" content="#元素内容的获取和修改
+
+html()  获取元素中HTML 内容html(value) 设置元素中HTML 内容
+text() 获取元素中文本内容text(value) 设置原生中文本内容
+val() 获取表单中的文本内容val(value) 设置表单中的文本内容
+
+html 和 text的区别$(‘#box’).html(); //获取html 内容$(‘#box’).text(); //获取">
   
   
     <link rel="icon" href="/favicon.png">
@@ -76,14 +82,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-pachong" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-jquery9" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/11/20/pachong/" class="article-date">
-  <time datetime="2015-11-20T05:19:36.000Z" itemprop="datePublished">2015-11-20</time>
+    <a href="/2015/11/23/jquery9/" class="article-date">
+  <time datetime="2015-11-23T02:00:14.766Z" itemprop="datePublished">2015-11-23</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/nodejs/">nodejs</a>
+    <a class="article-category-link" href="/categories/jquery/">jquery</a>
   </div>
 
   </div>
@@ -94,7 +100,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      node写爬虫
+      基础DOM 和CSS 操作
     </h1>
   
 
@@ -102,21 +108,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="准备安装环境">准备安装环境</h1><h3 id="express脚手架4-X">express脚手架4.X</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> express</span></span><br></pre></td></tr></table></figure>
-<h3 id="注意：">注意：</h3><p>最新express4.0版本中将命令工具分家出来了所以我们还需要安装一个命令工具,命令如下:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> express-generator</span></span><br></pre></td></tr></table></figure></p>
-<p>查看版本: express -V</p>
-<p>###注意 :<br>express -V中的V要大写,不然很多版本中会不识别</p>
-<h3 id="创建工程">创建工程</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">express</span> helloworld</span><br></pre></td></tr></table></figure>
-<p>新版本中命令发生了一些改变, 创建好project之后还需要用npm进行添加依赖和启动:<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd helloworld</span><br><span class="line"><span class="built_in">npm</span> install</span><br><span class="line"><span class="built_in">npm</span> start</span><br></pre></td></tr></table></figure></p>
-<p>然后新创建的helloworld就已经运行在3000端口上</p>
+        <p>#元素内容的获取和修改</p>
+<ol>
+<li>html()  获取元素中HTML 内容<br>html(value) 设置元素中HTML 内容</li>
+<li>text() 获取元素中文本内容<br>text(value) 设置原生中文本内容</li>
+<li>val() 获取表单中的文本内容<br>val(value) 设置表单中的文本内容</li>
+</ol>
+<h2 id="html_和_text的区别">html 和 text的区别</h2><p>$(‘#box’).html(); //获取html 内容<br>$(‘#box’).text(); //获取文本内容，会自动清理html 标签<br>$(‘#box’).html(‘<em>www.li.cc</em>‘); //设置html 内容<br>$(‘#box’).text(‘<em>www.li.cc</em>‘); //设置文本内容，会自动转义html 标签</p>
+<h2 id="追加数据">追加数据</h2><p>我们使用html()或text()设置元素里的内容时，会清空原来的数据。而我们期<br>望能够追加数据的话，需要先获取原本的数据。<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span><span class="string">'#box'</span>).html(<span class="variable">$(</span><span class="string">'#box'</span>).html() + <span class="string">'&lt;em&gt;www.li.cc&lt;/em&gt;'</span>); <span class="regexp">//</span>追加数据</span><br></pre></td></tr></table></figure></p>
+<h2 id="表单">表单</h2><p>如果元素是表单的话，jQuery 提供了val()方法进行获取或设置内部的文本数据。<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span><span class="string">'input'</span>).val(); <span class="regexp">//</span>获取表单内容</span><br><span class="line"><span class="variable">$(</span><span class="string">'input'</span>).val(<span class="string">'www.li.cc'</span>); <span class="regexp">//</span>设置表单内容</span><br></pre></td></tr></table></figure></p>
+<p>如果想设置多个选项的选定状态，比如下拉列表、单选复选框等等，可以通过数组传递<br>操作。<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span><span class="string">"input"</span>).val([<span class="string">"check1"</span>,<span class="string">"check2"</span>, <span class="string">"radio1"</span> ]); <span class="regexp">//value</span> 值是这些的将被选定</span><br></pre></td></tr></table></figure></p>
+<p>#属性获取和修改<br>attr(key) 获取某个元素key 属性的属性值<br>attr(key, value) 设置某个元素key 属性的属性值<br>attr({key1:value2, key2:value2…}) 设置某个元素多个key 属性的属性值<br>attr(key, function (index, value) {}) 设置某个元素key 通过fn 来设置</p>
+<p>#删除属性<br>$(‘div’).removeAttr(‘title’); //删除指定的属性</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.deanly007.com/2015/11/20/pachong/" data-id="cihbf13h7000isgmkugc9qb37" class="article-share-link">Share</a>
+      <a data-url="http://www.deanly007.com/2015/11/23/jquery9/" data-id="cihbf13hd000ssgmkadsg9ic1" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
 
     </footer>
   </div>
@@ -124,19 +135,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/11/20/thinkphp3/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/11/23/jquery10/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          缓存处理
+          CSS 操作
         
       </div>
     </a>
   
   
-    <a href="/2015/11/20/css1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/11/23/jquery8/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">属性动画</div>
+      <div class="article-nav-title">（8）DOM获取（5）伪类选择器</div>
     </a>
   
 </nav>

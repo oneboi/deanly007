@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jq&amp;ajax概念 | deanly007</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ajax概念Ajax 全称为：“Asynchronous JavaScript and XML”（异步JavaScript 和XML），它并不是JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+技术集合技术的集合，主要有：1234561.JavaScript，通过用户或其他与浏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jq&ajax概念">
+<meta property="og:url" content="http://www.deanly007.com/2015/11/23/jq&ajax/index.html">
+<meta property="og:site_name" content="deanly007">
+<meta property="og:description" content="ajax概念Ajax 全称为：“Asynchronous JavaScript and XML”（异步JavaScript 和XML），它并不是JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+技术集合技术的集合，主要有：1234561.JavaScript，通过用户或其他与浏">
+<meta property="og:updated_time" content="2015-11-23T05:44:12.281Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jq&ajax概念">
+<meta name="twitter:description" content="ajax概念Ajax 全称为：“Asynchronous JavaScript and XML”（异步JavaScript 和XML），它并不是JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+技术集合技术的集合，主要有：1234561.JavaScript，通过用户或其他与浏">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">deanly007</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">这是一个前端的博客网站</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+          <a class="main-nav-link" href="/king">me</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://www.deanly007.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-jq&amp;ajax" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/23/jq&ajax/" class="article-date">
+  <time datetime="2015-11-23T05:44:12.281Z" itemprop="datePublished">2015-11-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ajax/">ajax</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jq&amp;ajax概念
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ajax概念">ajax概念</h1><p>Ajax 全称为：“Asynchronous JavaScript and XML”（异步JavaScript 和XML），<br>它并不是JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形<br>成的结合体。使用Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。</p>
+<h1 id="技术集合">技术集合</h1><p>技术的集合，主要有：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>JavaScript，通过用户或其他与浏览器相关事件捕获交互行为；</span><br><span class="line"><span class="number">2.</span>XMLHttpRequest 对象，通过这个对象可以在不中断其它浏览器任务的情况下向服务</span><br><span class="line">器发送请求；</span><br><span class="line"><span class="number">3.</span>服务器上的文件，以XML、HTML 或JSON 格式保存文本数据；</span><br><span class="line"><span class="number">4.</span>其它JavaScript，解释来自服务器的数据（比如PHP 从MySQL 获取的数据）并将其</span><br><span class="line">呈现到页面上。</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>捕获事件 对象发送请求 获取文件数据 客户端处理数据</p>
+<hr>
+<h1 id="优点">优点</h1><p>由于Ajax 包含众多特性，优势与不足也非常明显。优势主要以下几点：<br>1.不需要插件支持（一般浏览器且默认开启JavaScript 即可）；<br>2.用户体验极佳（不刷新页面即可获取可更新的数据）；<br>3.提升Web 程序的性能（在传递数据方面做到按需放松，不必整体提交）；<br>4.减轻服务器和带宽的负担（将服务器的一些操作转移到客户端）；</p>
+<h1 id="缺点">缺点</h1><p>而Ajax 的不足由以下几点：<br>1.不同版本的浏览器度XMLHttpRequest 对象支持度不足(比如IE5 之前)；<br>2.前进、后退的功能被破坏（因为Ajax 永远在当前页，不会几率前后页面）；<br>3.搜索引擎的支持度不够（因为搜索引擎爬虫还不能理解JS 引起变化数据的内容）；<br>4.开发调试工具缺乏（相对于其他语言的工具集来说，JS 或Ajax 调试开发少的可怜）</p>
+<p>#异步和同步<br>使用Ajax 最关键的地方，就是实现异步请求、接受响应及执行回调。<br>那么异步与同步有什么区别呢？我们普通的Web程序开发基本都是同步的，意为执行一段程序才能执行下一段，类似电话中的通话，一个电话接完才能接听下个电话；而异步可以同时执行多条任务，感觉有多条线路，类似于短信，不会因为看一条短信而停止接受另一条短信。</p>
+<h2 id="不可以阻塞">不可以阻塞</h2><p>Ajax 也可以使用同步模式执行，但同步的模式属于阻塞模式，这样会导致多条线路执行时又必须一条一条执行，会让Web 页面出现假死状态，所以，一般Ajax 大部分采用异步模式</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.deanly007.com/2015/11/23/jq&ajax/" data-id="cihej254100204wmktcpnzy3p" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax/">ajax</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/11/23/ajax2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          jq&amp;ajax方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/11/23/jquery12/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">（12）节点操作</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ajax/">ajax</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/bootstrap/">bootstrap</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/cssanimate/">css动画</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/easyui/">easyui</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/system/">system</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/thinkphp/">thinkphp</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/">bootstrap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/easyui/">easyui</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">云标签</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ajax/" style="font-size: 16.67px;">ajax</a> <a href="/tags/bootstrap/" style="font-size: 10px;">bootstrap</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/easyui/" style="font-size: 13.33px;">easyui</a> <a href="/tags/jquery/" style="font-size: 20px;">jquery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/php/" style="font-size: 16.67px;">php</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">26</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/11/25/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/25/fullpage/">fullpage</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/24/ui2/">DataGrid(1)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/23/bootstrap/">导航栏</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/23/easyui1/">jQuery EasyUI 入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 king<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="/king" class="mobile-nav-link">me</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
